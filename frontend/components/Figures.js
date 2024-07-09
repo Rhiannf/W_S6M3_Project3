@@ -1,11 +1,10 @@
-import React from 'react' 
+import React from 'react';
 
-export default function Figure( imageURL, date ) {
-    return {
-      <figure>
-          <><img src={imageURL} />
-          <figcaption>Awesome pic taken on {date}
-          </figcaption></>
-        />
-    }
-  }
+export default function Figure({ imageURL, date }) {
+  return (
+    <figure>
+      <img src={imageURL} alt="Awesome pic" />
+      <figcaption>Awesome pic taken on {date}</figcaption>
+    </figure>
+  );
+}
